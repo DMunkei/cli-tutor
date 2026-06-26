@@ -14,6 +14,9 @@ podman:
 podmanrun:
 	podman run -it qasimwarraich/cli-tutor
 
+podmanpull:
+	podman pull ghcr.io/qasimwarraich/cli-tutor:latest
+
 install:
 	mkdir -p bin
 	${CC} build -o ./bin
