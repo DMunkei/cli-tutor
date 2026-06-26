@@ -1,8 +1,14 @@
 CC := "go"
 MAIN := "main.go"
 
+[group('execute')]
 all:
   {{CC}} run {{MAIN}} --no-welcome
+
+[group('execute')]
+run: build
+  ./bin/cli-tutor
+  
 
 [group('build')]
 build:

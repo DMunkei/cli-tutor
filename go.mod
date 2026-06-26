@@ -1,8 +1,6 @@
 module cli-tutor
 
-go 1.21
-
-toolchain go1.21.6
+go 1.25.6
 
 require (
 	github.com/charmbracelet/bubbles v0.18.0
